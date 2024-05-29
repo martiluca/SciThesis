@@ -1,0 +1,66 @@
+\documentclass[a4paper, twoside, 11pt]{SciThesis}
+
+% Useful commands
+\input{settings/commands.tex}
+
+\begin{document}
+    %% FRONTMATTER%%
+    
+    % Title Page
+    \include{frontmatter/titlepage}
+    
+    % insert blank page
+    \newpage
+    \thispagestyle{empty}
+    \mbox{}
+    \newpage
+    
+    % Dedication
+    \include{frontmatter/dedication}
+    
+    % insert blank page
+    \newpage
+    \thispagestyle{empty}
+    \mbox{}
+    \newpage
+    
+    % Table of contents
+    \romantableofcontents
+    
+    % Abstract
+    \include{frontmatter/abstract}
+    
+    %% MAIN %%
+    
+    % Header and footer styles for Chapters
+    \pagenumbering{arabic}
+    \pagestyle{fancy}
+    % header
+    \fancyhead{}
+    \fancyhead[RO]{\nouppercase\leftmark}
+    \fancyhead[LE]{\nouppercase\rightmark}
+    % footer
+    \fancyfoot{} % clear all footer fields
+    \fancyfoot[RO]{\thepage}
+    \fancyfoot[LE]{\thepage}
+    
+    % Chapters
+    \include{chapters/introduction}
+    
+    %% BACKMATTER %%
+    % Appendix
+    % \appendix
+    
+    % Bibliography
+    %\printbibliography
+    
+    % insert blank page
+    \newpage
+    \thispagestyle{empty}
+    \mbox{}
+    \newpage
+    
+    % Acknowledgements
+    \include{backmatter/acknowledgements}
+
+\end{document}
