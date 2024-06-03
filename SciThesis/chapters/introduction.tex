@@ -5,4 +5,28 @@
 \lipsum[2] \footnote{Footnote example}
 \lipsum[4]
 
-\lipsum[5]
+\section{Using citations}
+To cite a source, use the \verb|\cite{}| command, where the argument is the citation key for the reference you want to cite. The citation key is typically generated automatically by Zotero and can be found in the .bib file right after the @entry\_type.\\ 
+
+Here is an example of how to cite a source within your document:
+
+As shown in previous studies (\verb|\cite{smith2020example}|), the results indicate significant improvements.\\
+
+Which will render as follows:
+
+As shown in previous studies (\cite{smith2020example}), the results indicate significant improvements.\\
+
+\textbf{Inline citations}
+
+If you need to include the author’s name as part of the narrative, you can use the \verb|\textcite{}| command provided by BibLaTeX, which will look like this:
+
+Smith et al. \textcite{smith2020example} demonstrated significant improvements in their study.\\
+
+\textbf{Multiple citations}
+
+To cite multiple references at once, include all the citation keys separated by commas within the \verb|\cite{}| command:
+
+Several studies have explored this phenomenon \verb|\cite{smith2020example, johnson2019example, doe2018example}|.\\
+
+It will look like this:
+Several studies have explored this phenomenon \cite{smith2020example, johnson2019example, doe2018example}.
