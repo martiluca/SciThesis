@@ -17,6 +17,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{colortbl}
+\usepackage{listings} %add code portions
 
 % Optional packages %
 %\usepackage[version=4]{mhchem} %insert chemical formulas
@@ -24,7 +25,7 @@
 %\usepackage{siunitx} %SI units in mathematical formula using \si{} in the math environment
 %\usepackage{arydshln} %dashed line in tables
 %\usepackage{chronosys} %create timelines
-%\usepackage{minted} % add code portions
+%\usepackage{minted} % add code portions (you can use this instead of listings, but you need to install Python and Pygments - this usually leads to more problems than listings)
 %\setminted{fontsize=\footnotesize} %minted code size
 
 \usepackage{lipsum} %testing purposes package
@@ -36,7 +37,6 @@
 \newtheorem[M]{theo}{Theorem}[section]
 
 %% STYLE %%
-
 % Page geometry %
 \geometry{
     top=3.0cm,
@@ -91,6 +91,28 @@
     pdfauthor={Name Surname}
     }
 \urlstyle{same}
+
+% Code style %
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{white},   
+    commentstyle=\color{teal},
+    keywordstyle=\color{purple},
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{violet},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
 
 %% BIBLIOGRAPHY %%
 % Bibliography %
