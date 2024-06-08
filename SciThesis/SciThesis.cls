@@ -46,7 +46,7 @@
 }
 
 \setlength{\parindent}{0em} % no indentation
-\doublespacing % line-spacing
+\onehalfspacing % line-spacing
 
 % Labels (bold figures' labels, remove colon)
 \usepackage[labelfont={bf,sc},labelsep=space]{caption} 
