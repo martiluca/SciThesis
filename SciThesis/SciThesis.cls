@@ -24,8 +24,8 @@
 %\usepackage{siunitx} %SI units in mathematical formula using \si{} in the math environment
 %\usepackage{arydshln} %dashed line in tables
 %\usepackage{chronosys} %create timelines
-\usepackage{minted} % add code portions
-\setminted{fontsize=\footnotesize} %minted code size
+%\usepackage{minted} % add code portions
+%\setminted{fontsize=\footnotesize} %minted code size
 
 \usepackage{lipsum} %testing purposes package
 
