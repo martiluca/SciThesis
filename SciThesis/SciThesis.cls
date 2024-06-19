@@ -66,6 +66,10 @@
     ItalicFont = JetBrainsMono-Italic.ttf ,
     BoldItalicFont = JetBrainsMono-BoldItalic.ttf ]
 
+% Alternative fonts for any compiler (comment the above lines and uncomment the following)
+% \usepackage{cmbright}
+% \usepackage[OT1]{fontenc}
+
 % Chapter style %
 \usepackage{titlesec, blindtext}
 \newcommand{\hsp}{\hspace{20pt}}
